@@ -5,12 +5,12 @@ USE feelings_db;
 
 CREATE TABLE feelings(
   feeling_id INT AUTO_INCREMENT NOT NULL,
-  feeling_group VARCHAR(45) NOT NULL
+  feeling_group VARCHAR(45) NOT NULL,
   feeling_name VARCHAR(45) NOT NULL,
   feeling_emoji VARCHAR(10) NOT NULL,
   feeling_color VARCHAR(45) NOT NULL,
-  feeling_value INT(5) NOT NULL,
-    primary key(feeling_id)
+  feeling_value INT(5) NOT NULL
+  primary key(feeling_id)
 );
 
 INSERT INTO feelings (feeling_group, feeling_name, feeling_color, feeling_value)
